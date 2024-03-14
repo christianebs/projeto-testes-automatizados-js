@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "dev": "nodemon index.js",
+    "test": "jest --verbose",
+    "test-coverage": "jest --coverage",
+    "secure-mode": "jest --watchAll"
   },
   "keywords": [],
   "author": "",
