@@ -24,6 +24,11 @@ const reqMock = {
       email: '',
       password: faker.random.word()
     }
+  },
+  'change-password': {
+    body: {
+      userEmail: faker.internet.email()
+    }
   }
 };
 
