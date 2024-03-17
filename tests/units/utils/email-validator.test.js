@@ -1,4 +1,4 @@
-const Email = require('../../../src/utils/email-validator');;
+const Email = require('../../../src/utils/email-validator');
 
 describe('Email Validator tests', () => {
     test('should return false for empty email', () => {
