@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const UserController = require('../../src/controllers/user-ctrl');
 const { res, req } = require('../mocks/test-mocks');
 
-describe('[integration][session-ctrl] - create', () => {
+describe('[integration][user-ctrl] - create', () => {
   beforeAll(async () => {
     await mongoose.connect(process.env.MONGO_DB_URL);
   });
