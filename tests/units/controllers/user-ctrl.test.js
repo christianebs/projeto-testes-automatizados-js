@@ -1,7 +1,7 @@
 const { faker } = require('@faker-js/faker');
-const UserController = require('../../src/controllers/user-ctrl');
-const UserService = require('../../src/services/user-service');
-const Email = require('../../src/utils/email-validator');
+const UserController = require('../../../src/controllers/user-ctrl');
+const UserService = require('../../../src/services/user-service');
+const Email = require('../../../src/utils/email-validator');
 const { User, req, res } = require('../mocks/test-mocks');
 
 const UserServiceMock = {
