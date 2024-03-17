@@ -1,10 +1,10 @@
 const { faker } = require('@faker-js/faker');
 const jwt = require('jsonwebtoken')
-const SessionController = require('../../src/controllers/session-ctrl');
-const UserService = require('../../src/services/user-service');
-const Email = require('../../src/utils/email-validator');
-const SessionService = require('../../src/services/session-service');
-const { User, req, res } = require('../mocks/test-mocks');
+const SessionController = require('../../../src/controllers/session-ctrl');
+const UserService = require('../../../src/services/user-service');
+const Email = require('../../../src/utils/email-validator');
+const SessionService = require('../../../src/services/session-service');
+const { User, req, res } = require('../../mocks/test-mocks');
 
 const UserServiceMock = {
   checkPassword: async () => true,
