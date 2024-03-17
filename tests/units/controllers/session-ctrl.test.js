@@ -23,7 +23,7 @@ describe('[session-ctrl] - create', () => {
     jest.spyOn(SessionService, 'generateToken').mockReturnValueOnce(SessionServiceMock.generateToken);
     jest.spyOn(res, 'status');
 
-    await SessionController.create(req, res);
+    await SessionController.create(req('success'), res);
     expect(res.status).toBeCalledWith(200);
   });
 
@@ -59,7 +59,7 @@ describe('[session-ctrl] - create', () => {
     jest.spyOn(UserService, 'userExistsAndCheckPassword').mockImplementationOnce(UserServiceMock.wrongPassword);
     jest.spyOn(res, 'status');
 
-    await SessionController.create(req, res);
+    await SessionController.create(req('success'), res);
     expect(res.status).toBeCalledWith(404);
   });
 
@@ -67,7 +67,7 @@ describe('[session-ctrl] - create', () => {
     jest.spyOn(Email, 'isValid').mockImplementationOnce(UserServiceMock.error);
     jest.spyOn(res, 'status');
 
-    await SessionController.create(req, res);
+    await SessionController.create(req('success'), res);
     expect(res.status).toBeCalledWith(500);
   });
 });

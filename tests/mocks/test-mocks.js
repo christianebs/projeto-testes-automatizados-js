@@ -5,12 +5,29 @@ const User = {
   isNotValid: () => false,
 };
 
-const req = {
-  body: {
-    email: faker.internet.email(),
-    password: faker.random.word()
+const reqMock = {
+  'success': {
+    body: {
+      email: faker.internet.email(),
+      password: faker.random.word()
+    }
+  },
+  'no-password': {
+    body: {
+      name: faker.name.fullName(),
+      email: faker.internet.email()
+    }
+  },
+  'no-email': {
+    body: {
+      name: faker.name.fullName(),
+      email: '',
+      password: faker.random.word()
+    }
   }
 };
+
+const req = (params) => reqMock[params];
 
 const res = {
   status: (status) => {

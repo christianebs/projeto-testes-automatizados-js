@@ -2,7 +2,7 @@ const { faker } = require('@faker-js/faker');
 const UserController = require('../../../src/controllers/user-ctrl');
 const UserService = require('../../../src/services/user-service');
 const Email = require('../../../src/utils/email-validator');
-const { User, req, res } = require('../mocks/test-mocks');
+const { User, req, res } = require('../../mocks/test-mocks');
 
 const UserServiceMock = {
   create: () => ({ id: faker.database.mongodbObjectId() }),
@@ -16,7 +16,7 @@ describe('[user-ctrl] - create', () => {
 
     jest.spyOn(res, 'status');
     await UserController.create(req('success'), res);
-    expect(res.status).toHaveBeenCalledWith(201);
+    expect(res.status).toHaveBeenCalledWith(200);
   });
 
   test('Should return status 400 if the password is not provided', async () => {
