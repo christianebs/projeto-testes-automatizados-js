@@ -62,5 +62,16 @@ describe("[e2e] USER CONTROLLER", () => {
       expect(res.status).toBe(200);
       expect(res.body.message).toBe("ok");
     });
+
+    it('Should return status 401 when catch a error', async () => {
+      const token = 'token_invalido_ou_nulo';
+
+      const res = await request(app)
+        .post("/change-password")
+        .set('Authorization', `Bearer ${token}`)
+        .send(req('change-password').body);
+
+      expect(res.status).toBe(401);
+    });
   });
 });
