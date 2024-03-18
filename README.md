@@ -103,6 +103,8 @@ O projeto consiste em uma aplicação Node.js que oferece endpoints para autenti
 
 ## :white_check_mark: Resultado dos Testes
 
+![teste-automatizados](https://github.com/christianebs/projeto-testes-automatizados-js/assets/108686840/84b55e27-1b9e-40a2-9324-5412e932a29a)
+
 ## :computer: Rodando o Projeto
 
 ```shell
