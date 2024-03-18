@@ -14,6 +14,32 @@ O projeto consiste em uma aplicação Node.js que oferece endpoints para autenti
 - Faça as modificações necessárias
 - Realize a Pull Request (PR)
 
+## :computer: Rodando o Projeto
+
+```shell
+# 1. Clone o projeto
+
+git clone https://github.com/christianebs/projeto-testes-automatizados-js/
+
+# 2. Instale as dependências
+
+npm install
+```
+
+```shell
+# Configure o .env para conseguir rodar o projeto
+
+PORT=
+SECRET_KEY=
+MONGO_DB_URL=
+```
+
+Observações:
+
+- As dependências estão definidas no arquivo package.json. Ao executar **npm install**, todas elas serão instaladas 
+- O arquivo package.json já contém a configuração necessária na seção de scripts:
+- Não é necessário inicializar um novo projeto Node.js com **npm init -y**, pois ao clonar o repositório, você já terá um package.json configurado.
+
 ## :card_file_box: Fucionalidades do Projeto
 
 - [x] **Cadastro de Usuário**: Permite que novos usuários se cadastrem na aplicação fornecendo um nome, um e-mail válido e uma senha.
@@ -104,33 +130,6 @@ O projeto consiste em uma aplicação Node.js que oferece endpoints para autenti
 ## :white_check_mark: Resultado dos Testes
 
 ![teste-automatizados](https://github.com/christianebs/projeto-testes-automatizados-js/assets/108686840/84b55e27-1b9e-40a2-9324-5412e932a29a)
-
-## :computer: Rodando o Projeto
-
-```shell
-# 1. Clone o projeto
-
-git clone https://github.com/christianebs/projeto-testes-automatizados-js/
-
-# 2. Instale as dependências
-
-npm install
-```
-
-```shell
-# Configure o .env para conseguir rodar o projeto
-
-PORT=
-SECRET_KEY=
-MONGO_DB_URL=
-```
-
-Observações:
-
-- As dependências estão definidas no arquivo package.json. Ao executar **npm install**, todas elas serão instaladas 
-- O arquivo package.json já contém a configuração necessária na seção de scripts:
-- Não é necessário inicializar um novo projeto Node.js com **npm init -y**, pois ao clonar o repositório, você já terá um package.json configurado.
-
 
 ## :woman_technologist: :man_technologist: Desenvolvedores
 
