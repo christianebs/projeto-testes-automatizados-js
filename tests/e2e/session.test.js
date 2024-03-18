@@ -10,7 +10,7 @@ describe("[e2e] SESSION CONTROLLER", () => {
   beforeAll(async () => {
     jest.setTimeout(10000);
 
-    await mongoose.connect(process.env.MONGO_DB_BASE_URL);
+    await mongoose.connect(process.env.MONGO_DB_URL);
   });
 
   afterAll(async () => {
