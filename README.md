@@ -129,7 +129,7 @@ Observações:
 
 ## :white_check_mark: Resultado dos Testes
 
-![teste-automatizados](https://github.com/christianebs/projeto-testes-automatizados-js/assets/108686840/21b26202-01b9-47e2-815a-165f55a5880f)
+![Testes-Automatizados-Projeto](https://github.com/christianebs/projeto-testes-automatizados-js/assets/108686840/9e83d640-3464-4ed3-b90c-cdda9b49e3ac)
 
 ## :woman_technologist: :man_technologist: Desenvolvedores
 
